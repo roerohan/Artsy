@@ -93,7 +93,7 @@ body {
 }
 
 .mySlides .slide-img {
-    max-width: 30vw;
+    max-width: 40vw;
 }
 
 a:visited {
@@ -110,11 +110,11 @@ a:hover {
 
 .bottom-bar {
     background-color: #1a1a1a;
-    height: 35vh;
+    height: 45vh;
     margin-top: 5vh;
     color: white;
     font-size: 20px;
-    padding: 50px 100px;
+    padding: 50px 40px;
 }
 
 .list1 {
@@ -127,7 +127,9 @@ a:hover {
     margin-left: 15vw;
     padding-top: 10px;
     line-height: 5px;
+    width: 15vw;
     position: absolute;
+
 }
 .social {
     float: right;
@@ -136,6 +138,6 @@ a:hover {
 .list3 {
     float: right;
     margin-left: 20vw;
-    padding-top: 10px;
+    margin-top: -5px;
     margin-right: 10vw;
 }
