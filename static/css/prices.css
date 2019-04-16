@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+}
+
+.topimg {
+    width: 84vw;
+    height: 25vw;
+    filter: brightness(60%);
+}
+
+.centered {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.centered1 {
+    margin-top: -15vh;
+    color: white;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subbottom {
+    flex: 100%;
+}
+
+.main {
+    text-align: center;
+}
+
+.imagelist {
+    opacity: 0.9;
+    filter: brightness(60%);
+}
+
+h2 {
+    opacity: 1;
+    filter: brightness(100%);
+}
