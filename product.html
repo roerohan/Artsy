@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Artsy</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar1">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav top-right">
+                <li class="home-icon"><img src="static/images/home-icon.jpg"></li>
+                <li><a href="#">Sign Up</a></li>
+                <li>|</li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-default navbar2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="static/images/logo.png" class="logo"></a>
+            <ul class="nav navbar-nav top-bar">
+                <li><a href="#">Paintings</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Prints</a></li>
+                <li><a href="#">Drawings</a></li>
+                <li><img src="static/images/search-bar.jpg" class="search-bar"></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2 class="heading">OUR PRODUCTS</h2><br>
+    <div class="main-img">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Verdana, sans-serif;
+            }
+
+            img {
+                vertical-align: middle;
+            }
+
+            /* Slideshow container */
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+
+            /* The dots/bullets/indicators */
+            .dot {
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+
+            .active {
+                background-color: #717171;
+            }
+
+            /* Fading animation */
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 2.5s;
+                animation-name: fade;
+                animation-duration: 2.5s;
+            }
+
+            @-webkit-keyframes fade {
+                from {
+                    opacity: .4
+                }
+
+                to {
+                    opacity: 1
+                }
+            }
+
+            @keyframes fade {
+                from {
+                    opacity: .4
+                }
+
+                to {
+                    opacity: 1
+                }
+            }
+        </style>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="static/images/images1.jpg" class="slide-img">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="static/images/images2.jpg" class="slide-img">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="static/images/images3.jpg" class="slide-img">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="static/images/images4.jpg" class="slide-img">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="static/images/images5.jpg" class="slide-img">
+            </div>
+            <div class="mySlides fade">
+                <img src="static/images/images6.jpg" class="slide-img">
+            </div>
+            <div class="mySlides fade">
+                <img src="static/images/images7.jpg" class="slide-img">
+            </div>
+            <div class="mySlides fade">
+                <img src="static/images/images8.jpg" class="slide-img">
+            </div>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <br>
+        <h2 class="heading">REVIEWS AND RATINGS</h2> <br>
+        <img src="static/images/review.jpg">
+        <br>
+    </div>
+    <div class="bottom-bar">
+        <div class="list1">
+            <ul style="list-style-type: none;">
+                <li><a href="#">Home
+                        <hr></a></li>
+                <li><a href="#">Portfolio
+                        <hr></a></li>
+                <li><a href="#">About Us
+                        <hr></a></li>
+                <li><a href="#">Clients
+                        <hr></a></li>
+                <li><a href="#">Career
+                        <hr></a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="list2">
+            <ul style="list-style-type: none;">
+                <li><a href="#">Services
+                        <hr></a></li>
+                <li><a href="#">>> Visual Design
+                        <hr></a></li>
+                <li><a href="#">>> Development
+                        <hr></a></li>
+                <li><a href="#">>> Promotion
+                        <hr></a></li>
+                <li><a href="#">>> Outsourcing
+                        <hr></a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+        <img src="static/images/social.jpg" class="social">
+        <div class="list3">
+            <ul style="list-style-type: none;">
+                <li>Reach Us </li>
+                <li>E-92, Masjid Math, Greater Kailash 3,</li>
+                <li>New Delhi 110048, India</li>
+                <li>Contact Us </li>
+                <li>9999839722</li>
+                <li>contact@artattack.com</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
