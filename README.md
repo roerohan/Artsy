@@ -1,2 +1,4 @@
 # Artsy
-An aggregation of HTML pages for an Art Website
+```
+Frontend of an Art-Page, copied from provided design templates
+```
